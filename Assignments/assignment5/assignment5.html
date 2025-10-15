@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/init.js" defer></script>
+    <script src="js/round1.js" defer></script>
+    <script src="js/round2.js" defer></script>
+    <title>Monty Hall Game</title>
+</head>
+
+<body onload="initGame()">
+
+    <div class="gameContainer">
+
+        <div class="gameHeader">
+            <h1>Monty Hall Game</h1>
+            <h3><i>A car prize is behind on of these doors.</i></h3>
+            <h4 id="instructions">Pick a door to start the game.</h4>
+        </div>
+
+        <div class="gameConts">
+            <div class="door">
+                <div>
+                    <img src="media/mhdoor1.png" alt="Door 1" class="doorImg" id="door1" onclick="selectDoor(1)">
+                </div>
+            </div>
+            <div class="door">
+                <div>
+                    <img src="media/mhdoor2.png" alt="Door 2" class="doorImg" id="door2" onclick="selectDoor(2)">
+                </div>
+            </div>
+            <div class="door">
+                <div>
+                    <img src="media/mhdoor3.png" alt="Door 3" class="doorImg" id="door3" onclick="selectDoor(3)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

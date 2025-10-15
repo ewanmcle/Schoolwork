@@ -1,0 +1,110 @@
+.banner {
+    margin: 0px;
+    background-color: #96A78D;
+    display: flex;
+    flex-direction: row;
+}
+
+html,
+body {
+
+
+
+    margin: 0;
+
+    padding: 0;
+
+
+
+}
+
+h1 {
+    font-size: 50pt;
+    margin: 0;
+}
+
+.bannerconts {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%
+}
+
+.name {
+    text-align: right;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #343b31;
+}
+
+.job {
+    text-align: right;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #677361;
+}
+
+.logo {
+    width: 25%;
+    padding: 20px;
+}
+
+.title {
+    width: 85%;
+    padding: 20px;
+    margin-top: 7px;
+}
+
+.page {
+    background-color: #B6CEB4;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.page_contents {
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.wide_img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #343b31;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.gallery_image {
+    padding: 15px;
+}
+
+.small_image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343b31;
+}

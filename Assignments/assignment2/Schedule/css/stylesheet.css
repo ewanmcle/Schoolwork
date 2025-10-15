@@ -1,0 +1,50 @@
+table, td, th { 
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 24px;
+    table-layout: fixed;
+    width: 150px;
+    text-align: center;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time {
+    background-color: burlywood;
+    text-align: right;
+}
+
+.cs {
+    background-color: cadetblue;
+}
+
+.tt {
+
+    background-color: aquamarine;
+
+}
+
+.glb {
+    background-color: chartreuse;
+}
+
+.bus {
+    background-color: brown;
+}
+
+.name {
+    width: 200px;
+    padding: 0;
+}
+
+.tableTitle{
+    width: 120px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

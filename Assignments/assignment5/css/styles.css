@@ -1,0 +1,68 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family:cursive
+}
+
+body {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;        
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+h4 {
+    color: rgb(159, 159, 159) !important;
+}
+
+.gameContainer {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px solid red;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.499);
+}
+
+.gameheader {
+    margin: auto;
+    text-align: center;
+}
+
+.gameConts {
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+    text-align: center;     
+}
+
+.door {
+    padding: 1rem;
+    transition: 0.2s
+}
+
+.door:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    filter: hue-rotate(20deg);
+    cursor: pointer;
+}
+
+.door.eliminated {
+    filter: grayscale(100%);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.door.eliminated:hover {
+    transform: none;
+    filter: grayscale(100%);
+}

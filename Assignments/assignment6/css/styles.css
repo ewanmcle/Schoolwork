@@ -1,0 +1,155 @@
+:root {
+    --bg: rgb(0, 0, 0);
+    --text: rgb(251, 251, 251);
+    --text-2: rgb(200, 200, 200);
+    --border: rgb(50, 50, 50);
+    --card-bg: linear-gradient(rgb(18, 18, 18), rgb(16, 16, 16));
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-image: var(--card-bg);
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    padding: 10px;
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+}
+
+.header h1 {
+    color: var(--text);
+    font: 48px "Poppins", sans-serif;
+    text-align: center;
+}
+
+.interface {
+    width: 100%;
+    display: flex;
+}
+
+.calculator {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.calculator h2 {
+    color: var(--text);
+    font: 18px "Poppins", sans-serif;
+    font-weight: 00;
+    text-align: center;
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    font: 12px "Poppins", sans-serif;
+    color: var(--text-2);
+    font-weight: 100;
+    font-style: italic;
+    width: 40%;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid var(--border);
+}
+
+.prompt {
+    font: 16px "Poppins", sans-serif;
+    font-weight: 200;
+    color: var(--text-2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    font: 14px "Poppins", sans-serif;
+    font-weight: 200;
+    color: var(--text);
+    background-color: rgb(58, 58, 156);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 8px
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    background-color: rgb(37, 37, 154);
+}
+
+.chart {
+    width: 50%;
+}
+
+.chart h2 {
+    color: var(--text);
+    font: 18px "Poppins", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Pace Table Styles */
+#pace-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: var(--text);
+    font-family: "Roboto", sans-serif;
+}
+
+#pace-table th,
+#pace-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+#pace-table th {
+    background-color: rgba(50, 50, 50, 0.3);
+    font-weight: 700;
+    color: var(--text);
+}
+
+#pace-table td {
+    color: var(--text-2);
+}
+
+#pace-table tr:hover {
+    background-color: rgba(50, 50, 50, 0.2);
+}
