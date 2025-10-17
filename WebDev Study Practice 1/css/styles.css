@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --card: white;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #0e0069, #650077);
+}
+
+.card h1 {
+    color: rgb(17, 45, 94);
+}
+
+.main {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#taskList li {
+    cursor: pointer;
+}
+
+#taskList li:hover {
+    background-color: #f0f0f0;
+}
+
+#taskForm {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#taskInputContainer {
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    border: none;
+    background-color: rgb(234, 235, 238);
+    padding: 10px;
+    border-radius: 30px;
+    color: rgb(121, 121, 122);
+    width: 100%;
+}
+
+#taskInput:focus {
+    outline: none;
+}
+
+#submitTask {
+    border: none;
+    background-color: rgb(255, 80, 64);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+#submitTask:hover {
+    background-color: rgb(255, 60, 44);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+#noTasksMessage {
+    text-align: center;
+    color: rgba(121, 121, 122, 0.5);
+}
+
+.card {
+    background-color: var(--card);
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#taskList li {
+    background-color: rgb(234, 235, 238);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
