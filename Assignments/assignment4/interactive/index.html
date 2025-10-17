@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <div class="nav"></div>
+
+        <div class="nav-links" id="nav-links">
+
+            <h4 class="nav-btns">About</h4>
+            <h4 class="nav-btns">Services</h4>
+            <h4 class="nav-btns">Contact</h4>
+            <h4 class="nav-btns">Blog</h4>
+            <h4 class="nav-btns">Careers</h4>
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <img class="coverphoto" src="media/guy.jpg" alt="Cover Photo">
+
+        <div class="section-header">
+            <h1>Outline</h1>
+        </div>
+
+        <div class="outlineconts">
+
+            <div class="outlineimg">
+                <img class="small-img" src="media/landscape.jpg" alt="Small Image">
+                <h4 class="img-caption">Poetry</h4>
+            </div>
+
+
+            <div class="outline-text">
+
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </h4>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Running Pace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="card">
+                <h1>Runner Aide</h1>
+            </div>
+        </div>
+
+        <div class="interface">
+            <div class="calculator">
+                <div class="card">
+                    <h2>Calculate your pace</h2>
+                    <div class="calculator-form">
+                        <form id="pace-form">
+                            <div class="form-item">
+                                <label for="distance" class="prompt">Distance:</label>
+                                <input class="input-field" type="text" id="distance" name="distance" placeholder="Miles"
+                                    required>
+                            </div>
+                            <div class="form-item">
+                                <label for="time" class="prompt">Time:</label>
+                                <input class="input-field" type="text" id="time" name="time" placeholder="mm:ss"
+                                    required>
+                            </div>
+
+                            <div class="button-container">
+                                <button class="button" type="submit">Calculate Pace</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div class="card">
+                    <h2 class="poppins-extra-light">Pace Chart</h2>
+                    <div id="pace-results" style="display: none;">
+                        <table id="pace-table">
+                            <thead>
+                                <tr>
+                                    <th>Distance (miles)</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pace-table-body">
+                                <!-- generate table from js -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

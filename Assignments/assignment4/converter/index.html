@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <title>Converter</title>
+</head>
+
+<body>
+    <img class="background" src="media/image.jpg" alt="background image">
+    <div class="background-overlay">
+
+        <div class="contents">
+            <div class="app">
+                <div class="contents">
+                    <form class="form" onsubmit="return false;">
+                        <h1>Converter</h1>
+                        <div class="form-group">
+                            <input type="text" id="input" placeholder="Enter value">
+                        </div>
+
+                        <h3>Convert to:</h3>
+
+                        <div class="form-group">
+                            <input type="radio" id="Inches" name="unit" value="inches">
+                            <label for="Inches">Inches</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" id="Centimeters" name="unit" value="centimeters">
+                            <label for="Centimeters">Centimeters</label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" id="convertBtn">Convert</button>
+                        </div>
+                        <div id="result"></div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
